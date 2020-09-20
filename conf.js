@@ -33,6 +33,12 @@ jsproxy_config({
         'b.lulu.workers.dev': 1,
       }
     },
+    'mysite': {
+      label: '当前站点',
+      lines: {
+        [location.host]: 1,
+      }
+    },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: '',
@@ -66,10 +72,10 @@ jsproxy_config({
    * 静态资源 CDN 地址
    * 用于加速 `assets` 目录中的资源访问
    */
-  assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/zjcqoo.github.io@master/assets/',
+  //assets_cdn: 'https://cdn.jsdelivr.net/gh/zjcqoo/zjcqoo.github.io@master/assets/',
 
   // 本地测试时打开，否则访问的是线上的
-  // assets_cdn: 'assets/',
+   assets_cdn: 'assets/',
 
   // 首页路径
   index_path: 'index_v3.html',
