@@ -27,12 +27,7 @@ jsproxy_config({
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
     },
-    'demo-cf1': {
-      label: 'CF节点1',
-      lines: {
-        'b.lulu.workers.dev': 1,
-      }
-    },
+   
     'mysite': {
       label: '当前站点',
       lines: {
@@ -61,7 +56,7 @@ jsproxy_config({
    * 默认节点
    */
   // node_default: 'mysite',
-  node_default: /github\.io$/.test(location.host) ? 'demo-hk' : 'mysite',
+  node_default: 'mysite',
 
   /**
    * 加速节点
